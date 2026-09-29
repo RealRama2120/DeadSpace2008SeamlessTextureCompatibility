@@ -1,0 +1,9 @@
+Version 2.1.2
+
+- Fixed a shutdown hang in the normal texture handoff: the initial game process now terminates after starting the texture launcher instead of running third-party DLL detach callbacks that could strand it.
+- After the real game exits, the launcher closes only the EA activation helper belonging to that launch, allowing EA App to make Play available again.
+- Aligned the EXE, Vortex manifest, documentation, and package version to 2.1.2.
+
+With textures enabled, two earlier candidate EA launch/exit cycles and one cycle using the exact 2.1.2 release binaries completed normally. After each, the game and helper process chain cleared and EA Play was available. Steam and ROG Ally were not retested for this update.
+
+Install or update through the existing Dead Space (2008) Vortex setup. TexMod and texture packs are not included in this ZIP.

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "rama2120.dead-space-2008-texture-compatibility",
+  "name": "Dead Space (2008) Seamless Texture Compatibility",
+  "version": "2.1.2",
+  "author": "Rama2120",
+  "game": "Dead Space (2008)",
+  "bootstrap": "dinput8.dll",
+  "launcher": "DeadSpaceTextureLauncher.exe",
+  "textureFolder": "TexMod Packages"
+}

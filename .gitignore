@@ -1,0 +1,16 @@
+# Build products and local game state
+/build/
+/package/
+*.log
+*.tpf
+*.sav
+*.save
+TexMod.exe
+Dead Space.exe
+settings.ini
+
+# Editor and operating system files
+.vs/
+.vscode/
+Thumbs.db
+Desktop.ini
