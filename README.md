@@ -1,12 +1,12 @@
 # Dead Space (2008) Seamless Texture Compatibility
 
-Private source and release backup for Rama2120's Dead Space (2008) texture compatibility mod. This repository covers the original game only. The Dead Space 2 mod, Vortex extension, and other Dead Space patches are separate projects.
+Source and release archive for Rama2120's Dead Space (2008) texture compatibility mod. This repository covers the original game only. The Dead Space 2 mod, Vortex extension, and other Dead Space patches are separate projects.
 
 ## Current source: v2.1.2
 
 The repository root contains the browsable v2.1.2 source, `build.ps1`, the Vortex deployment manifest, documentation, and the source checksum list from the matching source ZIP. The original install and source ZIPs are preserved unchanged in [`versions/v2.1.2`](versions/v2.1.2).
 
-On Windows, run `build.ps1` from this directory. It requires the .NET Framework 4 C# compiler, Visual Studio C++ x86/x64 build tools, and a Windows 10/11 SDK. The script compiles the 32-bit launcher and `dinput8.dll` into `build/`, then stages the install files in `package/`. [`Documentation/README.md`](Documentation/README.md) covers player installation and compatibility.
+For prerequisites, exact Windows build commands, output paths, and verification steps, see [`BUILDING.md`](BUILDING.md). The root [`build.ps1`](build.ps1) compiles the 32-bit launcher and `dinput8.dll`; it does not recreate the historical release ZIP byte-for-byte. [`Documentation/README.md`](Documentation/README.md) covers player installation and compatibility.
 
 TexMod, texture packs, Dead Space game files, and the separate Vortex extension are not included.
 
