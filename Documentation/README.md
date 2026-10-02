@@ -141,6 +141,6 @@ Optional user data can then be deleted from:
 
 ## Release status
 
-The x86 build, export table, forwarding, marker detection, package discovery, TexMod UI automation, child-recursion guard, no-pack fallback, and ZIP layout have automated/mock coverage. Real Steam and EA App sessions, antivirus products, controller models, and large public texture packs still require community beta testing before calling the release universally proven.
+Automated/mock coverage: x86 build, export table, forwarding, marker detection, package discovery, TexMod UI automation, child-recursion guard, no-pack fallback, ZIP layout. Manual testing: two normal EA App launch/exit cycles with textures enabled, plus my full playthrough of the entire game with all my Dead Space (2008) mods and texture packs loaded. Steam and ROG Ally were not retested for this version.
 
 Rama2120's launcher and bootstrap source are MIT licensed. See `LICENSE.txt`, `THIRD_PARTY_NOTICES.txt`, `RESEARCH_NOTES.md`, and `Source`.
