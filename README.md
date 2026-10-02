@@ -62,7 +62,7 @@ created: a version folder preserves each available source snapshot without
 implying a reconstructed commit is an original historical release commit.
 
 The v2.1.2 EA App launch and exit path was tested with the final release
-binaries. Steam and ROG Ally were not retested for this version.
+binaries. Also tested working on the Steam release; ROG Ally was not retested for this version.
 
 ## Credits and licensing
 
