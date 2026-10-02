@@ -9,7 +9,7 @@ This is a Vortex-deployable compatibility mod for TexMod `.tpf` textures. It use
 
 - The initial game process now ends immediately after a successful TexMod handoff, avoiding a shutdown hang in third-party DLL detach callbacks.
 - After the real game closes, the launcher removes only the EA activation helper associated with that launch, so EA App can make Play available again. It verifies the helper's parent process, path, PID, and start time before cleanup, and leaves it alone while another Dead Space process is running.
-- Two normal EA App launch/exit cycles completed with textures enabled, with no game, launcher, TexMod, or activation-helper process left running. Steam and ROG Ally were not retested for this update. I also fully played through the entire game with all my Dead Space (2008) mods and texture packs loaded.
+- Two normal EA App launch/exit cycles completed with textures enabled, with no game, launcher, TexMod, or activation-helper process left running. Also tested working on the Steam release; ROG Ally was not retested for this update. I also fully played through the entire game with all my Dead Space (2008) mods and texture packs loaded.
 
 ## What the player does
 
@@ -141,6 +141,6 @@ Optional user data can then be deleted from:
 
 ## Release status
 
-Automated/mock coverage: x86 build, export table, forwarding, marker detection, package discovery, TexMod UI automation, child-recursion guard, no-pack fallback, ZIP layout. Manual testing: two normal EA App launch/exit cycles with textures enabled, plus my full playthrough of the entire game with all my Dead Space (2008) mods and texture packs loaded. Steam and ROG Ally were not retested for this version.
+Automated/mock coverage: x86 build, export table, forwarding, marker detection, package discovery, TexMod UI automation, child-recursion guard, no-pack fallback, ZIP layout. Manual testing: two normal EA App launch/exit cycles with textures enabled, plus my full playthrough of the entire game with all my Dead Space (2008) mods and texture packs loaded. Also tested working on the Steam release; ROG Ally was not retested for this version.
 
 Rama2120's launcher and bootstrap source are MIT licensed. See `LICENSE.txt`, `THIRD_PARTY_NOTICES.txt`, `RESEARCH_NOTES.md`, and `Source`.
