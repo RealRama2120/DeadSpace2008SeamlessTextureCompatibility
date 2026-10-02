@@ -1,14 +1,50 @@
 # Dead Space (2008) Seamless Texture Compatibility
 
-Source and release archive for Rama2120's Dead Space (2008) texture compatibility mod. This repository covers the original game only. The Dead Space 2 mod, Vortex extension, and other Dead Space patches are separate projects.
+![Version](https://img.shields.io/badge/version-2.1.2-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
+![Game](https://img.shields.io/badge/game-Dead%20Space%20(2008)-c41e1f)
 
-## Current source: v2.1.2
+**A seamless texture-loading mod for the original Dead Space (2008) on PC.**
+It lets the game load TexMod texture packs automatically at launch — no manual
+TexMod setup, no renamed executables, no custom launch options. Install your
+`.tpf` packs once; the launcher discovers, validates, and loads them every
+time you press Play.
 
-The repository root contains the browsable v2.1.2 source, `build.ps1`, the Vortex deployment manifest, documentation, and the source checksum list from the matching source ZIP. The original install and source ZIPs are preserved unchanged in [`versions/v2.1.2`](versions/v2.1.2).
+## What it does
 
-For prerequisites, exact Windows build commands, output paths, and verification steps, see [`BUILDING.md`](BUILDING.md). The root [`build.ps1`](build.ps1) compiles the 32-bit launcher and `dinput8.dll`; it does not recreate the historical release ZIP byte-for-byte. [`Documentation/README.md`](Documentation/README.md) covers player installation and compatibility.
+- Discovers compatible TexMod `.tpf` packs on each launch and starts the game
+  through TexMod, seamlessly.
+- Validates pack contents before loading; corrupt or inaccessible packs stop
+  the launch with a clear error instead of a silent failure.
+- Your normal Play button (EA App, Steam, GOG, Vortex) remains the entry
+  point.
 
-TexMod, texture packs, Dead Space game files, and the separate Vortex extension are not included.
+## Install
+
+1. Extract the release ZIP beside `Dead Space.exe`.
+2. Put your TexMod `.tpf` texture packs in the `TexMod Packages` folder (or
+   the game root).
+3. Launch the game normally. On first run you will be asked before anything
+   is downloaded; the original TexMod 0.9b is fetched only with your explicit
+   consent and its hashes are verified.
+
+See [`Documentation/README.md`](Documentation/README.md) for full player
+installation and compatibility notes. TexMod, texture packs, and game files
+are not included.
+
+## Build from source
+
+On Windows with Visual Studio C++ build tools and PowerShell:
+
+```powershell
+.\build.ps1
+```
+
+For prerequisites, exact build commands, output paths, and verification
+steps, see [`BUILDING.md`](BUILDING.md). The root `build.ps1` compiles the
+32-bit launcher and `dinput8.dll`; it does not recreate historical release
+ZIPs byte-for-byte.
 
 ## Version archive
 
@@ -19,8 +55,17 @@ TexMod, texture packs, Dead Space game files, and the separate Vortex extension 
 | [v2.1.0](versions/v2.1.0) | Locally retained five-file Beta ZIP, unchanged | Matching `release-final-2.1.0/Source` snapshot is copied as `source-snapshot/` | The earlier, larger upload ZIP was overwritten during local repackaging; its exact bytes and a separate original source ZIP are unavailable locally. |
 | [v2.1.2](versions/v2.1.2) | Original install ZIP, unchanged | Original source ZIP, unchanged; its exact source files are browsable at the repository root | Latest complete version. |
 
-There is no local v2.1.1 release package or source snapshot in the inspected project locations. Each version folder has a newly generated `SHA256SUMS.txt` for the archived files and extracted source. These checksum lists are backup metadata, not claimed as original release files. The v2.1.2 source ZIP also contains its original `SOURCE_CHECKSUMS.txt`, reproduced unchanged at the repository root.
+There is no local v2.1.1 release package or source snapshot. Each version
+folder has a newly generated `SHA256SUMS.txt` for the archived files —
+backup metadata, not claimed original release files. No historical tags were
+created: a version folder preserves each available source snapshot without
+implying a reconstructed commit is an original historical release commit.
 
-No historical tags were created: a version folder preserves each available source snapshot without implying a reconstructed commit is an original historical release commit.
+The v2.1.2 EA App launch and exit path was tested with the final release
+binaries. Steam and ROG Ally were not retested for this version.
 
-The v2.1.2 EA App launch and exit path was tested with the final release binaries. Steam and ROG Ally were not retested for this version.
+## Credits and licensing
+
+Created by Rama2120.
+
+MIT licensed — see [LICENSE](LICENSE).
