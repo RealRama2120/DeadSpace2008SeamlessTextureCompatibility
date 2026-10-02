@@ -9,7 +9,7 @@ This is a Vortex-deployable compatibility mod for TexMod `.tpf` textures. It use
 
 - The initial game process now ends immediately after a successful TexMod handoff, avoiding a shutdown hang in third-party DLL detach callbacks.
 - After the real game closes, the launcher removes only the EA activation helper associated with that launch, so EA App can make Play available again. It verifies the helper's parent process, path, PID, and start time before cleanup, and leaves it alone while another Dead Space process is running.
-- Two normal EA App launch/exit cycles completed with textures enabled, with no game, launcher, TexMod, or activation-helper process left running. Steam and ROG Ally were not retested for this update.
+- Two normal EA App launch/exit cycles completed with textures enabled, with no game, launcher, TexMod, or activation-helper process left running. Steam and ROG Ally were not retested for this update. I also fully played through the entire game with all my Dead Space (2008) mods and texture packs loaded.
 
 ## What the player does
 
