@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".github/social-preview.png" width="480" alt="Dead Seamless Texture Loading">
+</p>
+
 # Dead Space (2008) Seamless Texture Compatibility
 
 ![Version](https://img.shields.io/badge/version-2.1.2-blue)
